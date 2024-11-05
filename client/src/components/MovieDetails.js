@@ -46,7 +46,7 @@ export default function MovieDetails() {
     const navigate = useNavigate();
 
     const back = () => {
-        navigate(`/blogs/`);
+        navigate(`/posts/`);
     };
 
     return (

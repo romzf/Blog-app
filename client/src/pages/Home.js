@@ -14,7 +14,7 @@ export default function Home() {
                 />
                 <div className="text-background"> 
                     <h1 className="welcome-title text-light">Welcome to Blogs</h1>
-                    <Link className="btn btn-warning btn-lg" to={"/blogs"}>Check Blogs</Link>
+                    <Link className="btn btn-warning btn-lg" to={"/posts"}>Check Blogs</Link>
                 </div>
             </Col>
         </Row>

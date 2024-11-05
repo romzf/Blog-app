@@ -43,7 +43,7 @@ export default function Movies() {
     const handleCloseAdd = () => setShowAddMovie(false);
 
     const handleDetailsClick = (movieId) => {
-        navigate(`/blogs/${movieId}`);
+        navigate(`/posts/${movieId}`);
     };
 
     return (

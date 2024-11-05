@@ -73,8 +73,8 @@ function Content() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/admindashboard" element={<AdminDashboard />} />
                     <Route path="/UserDashboard" element={<UserDashboard />} />
-                    <Route path="/blogs" element={<Movies />} />
-                    <Route path="/blogs/:id" element={<MovieDetails />} /> 
+                    <Route path="/posts" element={<Movies />} />
+                    <Route path="/posts/:id" element={<MovieDetails />} /> 
                     <Route path="/logout" element={<Logout />} />
                     <Route path="*" element={<Error />} />
                 </Routes>

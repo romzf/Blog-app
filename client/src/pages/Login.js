@@ -66,7 +66,7 @@ export default function Login() {
 
     return (
         user.id !== null ? 
-        <Navigate to="/blogs" />
+        <Navigate to="/posts" />
         :
         <div className="container d-flex justify-content-center pt-5" style={{ minHeight: '350px' }}>
             <Form onSubmit={authenticate} className='form form-border w-100 form-bg' style={{ maxWidth: '400px' }}>

@@ -6,7 +6,7 @@ export default function CardActions({ movieId}) {
     const navigate = useNavigate();
 
     const handleDetailsClick = () => {
-        navigate(`/blogs/${movieId}`); // Navigates to MovieDetails view
+        navigate(`/posts/${movieId}`); // Navigates to MovieDetails view
     };
 
     return (
