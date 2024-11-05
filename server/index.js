@@ -19,6 +19,13 @@ mongoose.connection.once('open', () => console.log('Now connected to MongoDB Atl
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// cors
+const cors = require('cors');
+app.use(cors({
+	origin: ["http://localhost:3000", /\.vercel\.app$/], // Allow localhost:3000 and any *.vercel.app subdomain
+	credentials: true
+  }));
+
 //Routes Middleware
 const userRoutes = require("./routes/user");
 const postRoutes = require("./routes/post");

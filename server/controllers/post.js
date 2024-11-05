@@ -24,6 +24,21 @@ module.exports.addPost = async (req, res) => {
         .catch(error => res.status(400).send(error));
 };
 
+exports.getPostById = async (req, res) => {
+    try {
+        const postId = req.params.id;
+        const post = await Post.findById(postId).populate("author", "username email");
+
+        if (!post) {
+            return res.status(404).json({ message: "Post not found" });
+        }
+
+        res.status(200).json(post);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Server error" });
+    }
+};
 
 module.exports.getAllPosts = async (req, res) => {
     try {
@@ -61,7 +76,9 @@ module.exports.addComment = async (req, res) => {
         const { comment } = req.body;
         const postId = req.params.id;
         const userId = req.user.id;
+        const username = req.user.username;
 
+        console.log(username)
         if (!comment || comment.trim() === '') {
             return res.status(400).send({ message: 'Comment is required.' });
         }
@@ -70,8 +87,9 @@ module.exports.addComment = async (req, res) => {
         if (!post) {
             return res.status(404).send({ message: 'Post not found.' });
         }
+        console.log({ userId, username, comment });
 
-        post.comments.push({ userId, comment });
+        post.comments.push({ userId, username, comment });
         await post.save();
 
         res.status(201).send({ message: 'Comment added successfully.', post });
