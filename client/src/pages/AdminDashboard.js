@@ -141,7 +141,7 @@ export default function AdminDashboard() {
     }
 
     if (isAdmin === false) { 
-        return <Navigate to="/movies" />;
+        return <Navigate to="/blogs" />;
     }
 
     const getSortedMovies = () => {

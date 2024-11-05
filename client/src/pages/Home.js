@@ -13,8 +13,8 @@ export default function Home() {
                     alt="Welcome"
                 />
                 <div className="text-background"> 
-                    <h1 className="welcome-title text-light">Welcome to Movies</h1>
-                    <Link className="btn btn-warning btn-lg" to={"/movies"}>Check Movies</Link>
+                    <h1 className="welcome-title text-light">Welcome to Blogs</h1>
+                    <Link className="btn btn-warning btn-lg" to={"/blogs"}>Check Blogs</Link>
                 </div>
             </Col>
         </Row>

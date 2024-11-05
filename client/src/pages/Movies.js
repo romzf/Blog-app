@@ -43,7 +43,7 @@ export default function Movies() {
     const handleCloseAdd = () => setShowAddMovie(false);
 
     const handleDetailsClick = (movieId) => {
-        navigate(`/movies/${movieId}`);
+        navigate(`/blogs/${movieId}`);
     };
 
     return (
@@ -92,7 +92,7 @@ export default function Movies() {
                         <div className="d-flex flex-column align-items-center">
                             <img src="/EmptyWorkout.png" alt="EmptyWorkout..." className="EmptyWorkout img-fluid" />
                             <h3 className="d-flex justify-content-center mt-2 text-light">
-                                Movie list is Empty.
+                                Blog list is Empty.
                             </h3>
                         </div>
                     )}

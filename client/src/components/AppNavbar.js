@@ -50,13 +50,13 @@ export default function AppNavbar() {
                             isAdmin ? (
                                 <>
                                 <Nav.Link as={NavLink} to="/admindashboard" exact="true">Admin Dashboard</Nav.Link>
-                                <Nav.Link as={NavLink} to="/movies" exact="true">Posts</Nav.Link>
+                                <Nav.Link as={NavLink} to="/blogs" exact="true">Posts</Nav.Link>
                                 <Nav.Link as={Link} to="/logout">Logout</Nav.Link>
                                 </>
                             ) : (
                                 <>
                                 <Nav.Link as={NavLink} to="/userdashboard" exact="true">User Dashboard</Nav.Link>
-                                <Nav.Link as={NavLink} to="/movies" exact="true">Movies</Nav.Link>
+                                <Nav.Link as={NavLink} to="/blogs" exact="true">Posts</Nav.Link>
                                 <Nav.Link as={Link} to="/logout">Logout</Nav.Link>
                                 </>
                             )
