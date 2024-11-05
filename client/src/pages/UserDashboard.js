@@ -185,7 +185,7 @@ export default function UserDashboard() {
             ) : (
                 <>
                     <div className="d-flex justify-content-center pt-3">
-                        <h1 className="text-light">Admin Dashboard</h1>
+                        <h1 className="text-light">My Posts</h1>
                     </div>
                     {moviesData.length > 0 ? (
                         <div className="table-responsive mx-5">
