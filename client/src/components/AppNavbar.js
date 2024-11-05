@@ -55,7 +55,7 @@ export default function AppNavbar() {
                                 </>
                             ) : (
                                 <>
-                                <Nav.Link as={NavLink} to="/userdashboard" exact="true">User Dashboard</Nav.Link>
+                                <Nav.Link as={NavLink} to="/userdashboard" exact="true">My Posts</Nav.Link>
                                 <Nav.Link as={NavLink} to="/posts" exact="true">Posts</Nav.Link>
                                 <Nav.Link as={Link} to="/logout">Logout</Nav.Link>
                                 </>
