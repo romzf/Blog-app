@@ -4,15 +4,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-// require('dotenv').config();
+require('dotenv').config();
 
 
 // [SECTION] Server setup
 const app = express();
 
 // [SECTION] Database Connection
-// mongoose.connect(process.env.MONGODB_STRING)
-mongoose.connect('mongodb+srv://admin:admin1234@fajardodb.i8f05.mongodb.net/Blog-Management-App?retryWrites=true&w=majority&appName=FajardoDB');
+mongoose.connect(process.env.MONGODB_STRING)
+
 mongoose.connection.once('open', () => console.log('Now connected to MongoDB Atlas'));
 
 // [SECTION] Middlewares
